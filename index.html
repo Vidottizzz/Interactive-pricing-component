@@ -17,7 +17,7 @@
   <body>
     <div id="card-itself">
       <header>
-        <img src="" alt="">
+        <img id="circle-img" src="/images/pattern-circles.svg" alt="">
         <div id="hold-title">
           <h1> Simple, traffic-based pricing</h1>
           <p>Sign-up for our 30-day trial.</p>
@@ -28,11 +28,11 @@
       <main>  
         <p>100K PAGEVIEWS</p>
 
-        <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-          <p>Value: <span id="demo"></span></p>
+        <div class='range'>
+          <input id="myinput" type="range" min='0' max='100' step='1' />
+          <span>50%</span>
         </div>
-
+        
         <div id="hold-month">
           <span>$16.00</span><span> / month</span>
         </div>
@@ -49,19 +49,19 @@
             
             <div id="hold-year">
                   <span>Yearly Billing</span>
-                  <span>25%</span></main>
+                  <span id="orange-span">25%</span></main>
             </div>
             
             <hr>
             <div id="hold-foot">
               <div>
-                <img src="" alt=""><span> Unlimited websites</span>
+                <img class="check-mark" src="images/icon-check.svg" alt=""><span> Unlimited websites</span>
               </div>
               <div>
-                <img src="" alt=""><span> 100% data ownership</span>
+                <img class="check-mark" src="images/icon-check.svg" alt=""><span> 100% data ownership</span>
               </div>
               <div>
-                <img src="" alt=""><span> Email reports</span>           
+                <img class="check-mark" src="images/icon-check.svg" alt=""><span> Email reports</span>           
               </div>
               <button>Start my trial</button> 
             </div>
@@ -82,7 +82,10 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
-
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
     <script src="script/script.js" type="text/javascript"></script>
   </body>
 </html>
