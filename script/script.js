@@ -8,8 +8,18 @@ let myOutput = document.querySelector('#myoutput');
 let monthSpan = document.querySelector('#month-span');
 let yearSpan = document.querySelector('#year-span');
 let monthYearSpan = document.querySelector("#month-year");
+let orangeSpan = document.querySelector("#orange-span");
 //valores escolhidos
   
+
+
+console.log(window.innerHeight);
+console.log(window.innerWidth);
+
+
+if (window.innerHeight >= 1440) {
+  orangeSpan.innerHTML = "-25% descount";
+}
 
 slider.style.background = `linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) ${(value-min)/(max-min)*100}%, #DEE2E6 ${(value-min)/(max-min)*100}%, #DEE2E6 100%)`;
 
