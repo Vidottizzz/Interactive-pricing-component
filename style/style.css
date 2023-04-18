@@ -55,38 +55,37 @@ hr {
   position: absolute;
   bottom: 22rem;
 }
-body{
-    background-color: rgb(202, 202, 172);
-    
-  }
-  .flex {
-    display: flex;
-  }
-  #card-itself {
-    z-index: 1;
-    margin: 6rem auto;
-    width: 26rem;
-    height: 48rem;
-    background-color: var(--VeryPaleBlue);
-    padding: 6rem 2rem;
-    position: relative;
-    background-image: url(images/bg-pattern.svg);
-  background-size: auto
-
-
-
+body {
+  background-color: rgb(202, 202, 172);
+}
+.flex {
+  display: flex;
+}
+#card-itself {
+  z-index: 1;
+  margin: 0rem auto;
+  width: 26rem;
+  height: 48.3rem;
+  background-color: var(--VeryPaleBlue);
+  padding: 6rem 2rem;
+  position: relative;
+  background-image: url(/images/bg-pattern.svg);
+  background-size: auto;
 }
 #circle-img {
   width: 12rem;
   height: 12rem;
   position: absolute;
-  left: 9.4rem;
-  top:3rem;
-  color:red;
+  left: 8.9rem;
+  top: 3.8rem;
+  color: red;
   z-index: -1;
-  
+}
+#hold-title h1 {
+  color:black;
 }
 #hold-title {
+  color:var(--GrayishBlue);
 }
 #hold-mainfooter {
   padding: 2.4rem 2rem;
@@ -130,6 +129,9 @@ body{
   left: -0.4rem;
   background-color: var(--LightGrayishBlue);
 }
+.toggle:hover {
+  background-color: var(--SoftCyan);
+}
 .circle {
   position: absolute;
   left: 0.3rem;
@@ -139,17 +141,14 @@ body{
   background-color: white;
   transition: 0.3s;
 }
-.active {
-  border-color: rgb(85, 227, 180);
+.focus-span {
+  color:black;
 }
-.active + .text {
-  color: rgb(85, 227, 180);
-}
+
 .active .circle {
   left: 92%;
   transform: translateX(-100%);
   transition: 0.3s;
-  background-color: rgb(85, 227, 180);
 }
 .toggle {
   margin-left: 9rem;
@@ -167,12 +166,11 @@ body{
   left: 17.2rem;
   top: 29.5rem;
   font-weight: 300;
-
 }
 #hold-main {
   position: absolute;
   top: 34rem;
-  color:var(--GrayishBlue);
+  color: var(--GrayishBlue);
 }
 #hold-year {
   /* position: absolute; */
@@ -181,23 +179,32 @@ body{
 #hold-toggle {
   position: absolute;
 }
+#orange-span {
+  margin-left: 0.25rem;
+  font-weight: 700;
+  color:var(--LightRed);
+  border-radius: 1rem;
+padding: 0.2rem 0.65rem;
+background-color: var(--LightGrayishRed);
+font-size: 0.8rem;
+}
 #hold-foot {
-    position: absolute;
-    bottom: 13rem;
-    left: 8.3rem;
-    color:var(--GrayishBlue);
-  }
-  #hold-foot div {
+  position: absolute;
+  bottom: 13rem;
+  left: 8.3rem;
+  color: var(--GrayishBlue);
+}
+#hold-foot div {
   margin-bottom: 1rem;
 }
 .check-mark {
   width: 0.7rem;
   margin-right: 1rem;
 }
- 
+
 button {
   font-size: 0.95rem;
-  left: 0.5rem ;
+  left: 0.5rem;
   position: absolute;
   bottom: -5rem;
   font-weight: 700;
@@ -209,48 +216,46 @@ button {
   cursor: pointer;
 }
 
-
 /* //RANGE */
-.range input{
-	-webkit-appearance:none;
-	width:100%;
-	height:10px;
-	border-radius:5px;
-	background-color: var(--LightGrayishBlue);
-	outline:none;
+.range input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--LightGrayishBlue);
+  outline: none;
 }
-.range input::-webkit-slider-thumb{
-  -webkit-appearance:none;
-	width:50px;
-	height:50px;
-	border-radius:50%;
-	background-color:var(--StrongCyan);
+.range input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--StrongCyan);
   background-image: url(/images/icon-slider.svg);
   background-position: 50% 47%;
   background-size: 60%;
   background-repeat: no-repeat;
   cursor: pointer;
   box-shadow: 0px 20px 30px 5px var(--SoftCyan);
-  
 }
-.range span{
-  position:absolute;
-	margin-left:14px;
-	width:50px;
-	height:30px;
-	background-color:#222;
-	color:#fff;
-	border-radius:3px;
-	text-align:center;
-	line-height:30px;
+.range span {
+  position: absolute;
+  margin-left: 14px;
+  width: 50px;
+  height: 30px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 30px;
 }
-.range span:before{
-	content:'';
-	position:absolute;
-	border-right:9px solid transparent;
-	border-left:9px solid transparent;
-	border-bottom:12px solid #222;
-	left:-10px;
-	top:50%;
-	transform:translateY(-50%) rotate(-90deg);
+.range span:before {
+  content: "";
+  position: absolute;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+  border-bottom: 12px solid #222;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
 }
