@@ -53,10 +53,11 @@ hr {
   border: 1px solid hsl(225, 40%, 94%);
   width: 86.4%;
   position: absolute;
+  left: 2rem;
   bottom: 22rem;
 }
 body {
-  background-color: rgb(202, 202, 172);
+  background-color: var(--VeryPaleBlue)
 }
 .flex {
   display: flex;
@@ -71,6 +72,7 @@ body {
   position: relative;
   background-image: url(/images/bg-pattern.svg);
   background-size: auto;
+  background-repeat: no-repeat;
 }
 #circle-img {
   width: 12rem;
@@ -163,12 +165,13 @@ body {
   position: absolute;
   font-size: 1.1rem;
   color: var(--GrayishBlue);
-  left: 17.2rem;
+  left: 17.6rem;
   top: 29.5rem;
   font-weight: 300;
 }
 #hold-main {
   position: absolute;
+  left:3.2rem;
   top: 34rem;
   color: var(--GrayishBlue);
 }
@@ -193,6 +196,7 @@ font-size: 0.8rem;
   bottom: 13rem;
   left: 8.3rem;
   color: var(--GrayishBlue);
+  
 }
 #hold-foot div {
   margin-bottom: 1rem;
@@ -214,6 +218,9 @@ button {
   padding: 1rem 1rem;
   background-color: var(--DarkDesaturatedBlue);
   cursor: pointer;
+}
+button:hover {
+  color:white;
 }
 
 /* //RANGE */
@@ -258,4 +265,84 @@ button {
   left: -10px;
   top: 50%;
   transform: translateY(-50%) rotate(-90deg);
+}
+#hold-ps p:nth-child(2) {
+ 
+  margin-top: 0.3rem;
+
+}
+
+
+@media screen and (min-width: 1240px) {
+hr {
+  width: 100%;
+  position: absolute;
+  left: 0rem;
+  top:20rem;
+ 
+}
+  body {
+    background-color: aqua;
+    position:static;
+    
+  }
+  #hold-ps  p{
+ display: inline-block;
+  
+  }
+  #card-itself {
+    width: 100%;
+    background-size: contain;
+  }
+  #hold-mainfooter {
+    position: relative;
+    width: 36rem;
+    margin: 5rem auto;
+    height: 29rem;
+  }
+  .range{
+    margin-top: 3.6rem;
+  }
+  main p:nth-child(1) {
+    margin-top: 2rem;
+    margin-right: 25rem;
+  }
+  #hold-month span{
+    position: absolute;
+    top: 3rem;
+    left: 22rem;
+  }
+  #hold-month span:nth-child(2){
+    position: absolute;
+    top: 4rem;
+    left: 32.6rem;
+  }
+  #hold-main {
+    top:15rem;
+    left: 10rem;
+  }
+  #hold-foot {
+    bottom:2.4rem;
+    left:2rem;
+  }
+  .div-foot:nth-child(2) {
+   margin-left: 1rem;
+  }
+  .div-foot:nth-child(3) {
+   margin-left: -2.8rem;
+  }
+  
+  button {
+    position: absolute;
+    left: 21rem;
+    bottom:3rem;
+    padding: 0.9rem;
+    width: 13rem;
+   
+  }
+  #circle-img {
+    position:absolute ;
+    left: 14rem;
+    top:-14rem;
+  }
 }
